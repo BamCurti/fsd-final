@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu May 13 20:51:37 2021
-# Process ID: 41360
+# Start of session at: Thu May 13 23:02:29 2021
+# Process ID: 24656
 # Current directory: C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.runs/synth_1
 # Command line: vivado.exe -log digital_game.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source digital_game.tcl
 # Log file: C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.runs/synth_1/digital_game.vds

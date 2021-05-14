@@ -61,7 +61,7 @@ initial begin
         r_char_selector = 1'b0;
 end
 
-always @ (posedge clock or negedge reset or posedge w_uart_done) begin
+always @ (posedge clock or negedge reset) begin
     if(!reset) begin rNextState <= IDLE;
     end
     else begin rCurrentState <= rNextState;

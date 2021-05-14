@@ -18,7 +18,7 @@ localparam  START = 3;
 localparam  FINISH = 4;
 localparam  RUNNING = 2;
 
-always @ ( posedge clock or negedge reset) begin
+always @(posedge clock or negedge reset) begin
   if(!reset) begin
     rNextState <= INIT;
   end
@@ -50,30 +50,44 @@ always @ (*) begin
     
 end
 
-always @ (posedge clock or negedge reset) begin
+always @(posedge clock or negedge reset) begin
+    if(!reset) begin
+    random <= 6'b0;
+    done <= 1'b0;
+    busy <= 1'b0;
+    end
+
+    else begin
     case(rCurrentState)
+    
     INIT: begin
     random <= 6'b0;
     done <= 1'b0;
     busy <= 1'b0;
     end
+    
     IDLE: begin
         done <= 1'b0;
     end
+    
     START: begin
         busy <= 1'b1;
     end    
+    
     RUNNING: begin
         random = random + 1;
         if(random == 100) begin random = 0;
         end
     end
+    
     FINISH: begin
         done <= 1'b1;
         busy <= 1'b0;
     end
     
     endcase
+        
+    end
 
 
 end

@@ -6,7 +6,8 @@ module digital_game(
     input[6:0] i_number,
     output[7:0] display,
     output[3:0] displaySelector, 
-    output uartTX    
+    output uartTX,    
+    output[2:0] state
 );
 //ESTADOS
 localparam RESET = 3'h0;
@@ -18,6 +19,7 @@ localparam WAITING_REGISTER = 3'h5;
 localparam COMPARE_DATA = 3'h6;
 
 reg[2:0] r_current_state, r_next_state;
+assign state = r_current_state;
 
 //elementos de random_number
 wire random_busy, random_done;
