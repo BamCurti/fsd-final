@@ -1,0 +1,31 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xiling/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 57ceda54b8214ede9880beca852513a3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot digital_gameTB_behav xil_defaultlib.digital_gameTB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'disp0' [C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/disp_7_seg_16_max.v:39]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'disp1' [C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/disp_7_seg_16_max.v:40]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 26 for port 'compareValue' [C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/sweep4disp7seg.v:26]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/new/digital_game.v" Line 20. Module digital_game doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/random_number.v" Line 1. Module random_number doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/disp_7_seg_16_max.v" Line 21. Module disp_7_seg_16_max doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/countCompare.v" Line 1. Module countCompare(NBITS=26) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/new/digital_game.v" Line 20. Module digital_game doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/random_number.v" Line 1. Module random_number doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/disp_7_seg_16_max.v" Line 21. Module disp_7_seg_16_max doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/countCompare.v" Line 1. Module countCompare(NBITS=26) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.random_number
+Compiling module xil_defaultlib.uartTX
+Compiling module xil_defaultlib.send_integer
+Compiling module xil_defaultlib.countCompare(NBITS=26)
+Compiling module xil_defaultlib.sweep4disp7seg
+Compiling module xil_defaultlib.disp_7_seg_16_max
+Compiling module xil_defaultlib.digital_game
+Compiling module xil_defaultlib.digital_gameTB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot digital_gameTB_behav

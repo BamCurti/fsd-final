@@ -1,0 +1,52 @@
+
+*** Running vivado
+    with args -log digital_game.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source digital_game.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source digital_game.tcl -notrace
+Command: synth_design -top digital_game -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 39100
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1017.508 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'digital_game' [C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/new/digital_game.v:1]
+	Parameter RESET bound to: 3'b000 
+	Parameter IDLE bound to: 3'b001 
+	Parameter GENERATE_RANDOM bound to: 3'b010 
+	Parameter START_SENDING bound to: 3'b011 
+	Parameter SENDING_UART bound to: 3'b100 
+	Parameter WAITING_REGISTER bound to: 3'b101 
+	Parameter COMPARE_DATA bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'random_number' [C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/random_number.v:1]
+	Parameter NBITS_COUNTER bound to: 100 - type: integer 
+	Parameter INIT bound to: 32'sb00000000000000000000000000000000 
+	Parameter IDLE bound to: 1 - type: integer 
+	Parameter START bound to: 3 - type: integer 
+	Parameter FINISH bound to: 4 - type: integer 
+	Parameter RUNNING bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/random_number.v:31]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/random_number.v:54]
+ERROR: [Synth 8-91] ambiguous clock in event control [C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/random_number.v:53]
+ERROR: [Synth 8-6156] failed synthesizing module 'random_number' [C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/old/random_number.v:1]
+ERROR: [Synth 8-6156] failed synthesizing module 'digital_game' [C:/Users/Edgar Vallejo Curti/Documents/Escuela/ITESO/5TO SEMESTRE/Fundamentos de Sistemas Digitales/workspace/proyecto_final/proyecto_final.srcs/sources_1/new/digital_game.v:1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1017.508 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+10 Infos, 0 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Thu May 13 20:51:52 2021...

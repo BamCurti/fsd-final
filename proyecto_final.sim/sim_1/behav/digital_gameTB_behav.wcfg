@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="digital_gameTB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="digital_gameTB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="696766334fs"></ZoomStartTime>
+      <ZoomEndTime time="1516826335fs"></ZoomEndTime>
+      <Cursor1Time time="833443000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="156"></NameColumnWidth>
+      <ValueColumnWidth column_width="74"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/digital_gameTB/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/register" type="logic">
+      <obj_property name="ElementShortName">register</obj_property>
+      <obj_property name="ObjectShortName">register</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/i_number" type="array">
+      <obj_property name="ElementShortName">i_number[6:0]</obj_property>
+      <obj_property name="ObjectShortName">i_number[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/display" type="array">
+      <obj_property name="ElementShortName">display[7:0]</obj_property>
+      <obj_property name="ObjectShortName">display[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/displaySelector" type="array">
+      <obj_property name="ElementShortName">displaySelector[3:0]</obj_property>
+      <obj_property name="ObjectShortName">displaySelector[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/uartTX" type="logic">
+      <obj_property name="ElementShortName">uartTX</obj_property>
+      <obj_property name="ObjectShortName">uartTX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/DUT/r_current_state" type="array">
+      <obj_property name="ElementShortName">r_current_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">r_current_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/DUT/random_number" type="array">
+      <obj_property name="ElementShortName">random_number[6:0]</obj_property>
+      <obj_property name="ObjectShortName">random_number[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/DUT/compare_flag" type="logic">
+      <obj_property name="ElementShortName">compare_flag</obj_property>
+      <obj_property name="ObjectShortName">compare_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/digital_gameTB/DUT/points" type="array">
+      <obj_property name="ElementShortName">points[3:0]</obj_property>
+      <obj_property name="ObjectShortName">points[3:0]</obj_property>
+   </wvobject>
+</wave_config>

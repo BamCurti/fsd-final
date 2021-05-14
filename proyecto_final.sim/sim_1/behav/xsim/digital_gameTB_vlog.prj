@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../proyecto_final.srcs/sources_1/old/countCompare.v" \
+"../../../../proyecto_final.srcs/sources_1/new/digital_game.v" \
+"../../../../proyecto_final.srcs/sources_1/old/disp_7_seg_16_max.v" \
+"../../../../proyecto_final.srcs/sources_1/old/random_number.v" \
+"../../../../proyecto_final.srcs/sources_1/old/send_integer.v" \
+"../../../../proyecto_final.srcs/sources_1/old/sweep4disp7seg.v" \
+"../../../../proyecto_final.srcs/sources_1/old/uartTX.v" \
+"../../../../proyecto_final.srcs/sources_1/new/digital_gameTB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
